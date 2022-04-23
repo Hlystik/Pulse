@@ -6,6 +6,18 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    @media (max-width: 1200px) {
+        max-width: 950px;
+    }
+    @media (max-width: 991px) {
+        max-width: 720px;
+    }
+    @media (max-width: 767px) {
+        max-width: 550px;
+    }
+    @media (max-width: 574px) {
+        max-width: 305px;
+    }
 }
 @import 'blocs/promo.scss';
 @import 'blocs/header.scss';
