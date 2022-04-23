@@ -3,6 +3,9 @@
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
+h2 {
+    margin: 0;
+}
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -22,3 +25,6 @@
 @import 'blocs/promo.scss';
 @import 'blocs/header.scss';
 @import 'blocs/buttons';
+@import 'blocs/benefits';
+@import 'blocs/title';
+@import 'blocs/consultation';
