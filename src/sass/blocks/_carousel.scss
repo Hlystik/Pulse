@@ -21,4 +21,92 @@
         left: auto;
         right: -66px;
     }
+/*     .slick-dotted.slick-sliderc{
+        margin-bottom: 30px;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+            button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+                &:before {
+                    content: '•';
+                    font-family: 'slick';
+                    font-size: 30px;
+                    line-height: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;   
+                    text-align: center;
+                    opacity: .25;
+                    color: black;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+                &:hover, :focus {
+                    outline: none;
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    } */
+    .slick-dots {
+        text-align: center;
+        li {
+            margin: 0px 10px;
+            margin-top: 10px;
+            list-style-type: none;
+            display: inline-block;
+            button {
+                border-radius: 100%;
+                background-color: black;
+                width: 15px;
+                height: 15px;
+                color: transparent;
+                border: none;
+                opacity: .4;
+               /*  &:focus {
+                    opacity: 1;
+                } */
+            }
+        }
+        li.slick-active {
+            button {
+                opacity: 1;
+            }
+        }
+    }
+   /*  .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: black;
+    } */
 }
