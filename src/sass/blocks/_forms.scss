@@ -19,8 +19,13 @@
     }
     &_mt26 {
         margin-top: 26px;
+        //для вертикального мобильника
+        @media (max-width: 798px) {
+            height: 250px;
+        }
         @media (max-width: 574px) {
             width: 280px;
+            min-height: 350px;
         }
     }
 }

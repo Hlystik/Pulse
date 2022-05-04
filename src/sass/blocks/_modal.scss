@@ -15,6 +15,10 @@
     min-height: 402px;
     background: #F2F2F2;
     padding: 35px 40px 40px 40px;
+    //для вертикального мобильника
+    @media (max-width: 798px) {
+        min-height: 320px;
+    }
     @media (max-width: 574px) {
         width: 300px;
         min-height: 350px;
@@ -57,6 +61,21 @@
     }
     &_mini {
         min-height: 143px;
+    }
+    .error {
+        border: 1px solid red
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        @media (max-width: 798px) {
+            font-size: 12px;
+        }
+        @media (max-width: 574px) {
+            font-size: 12px;
+        }
+        
     }
 }
 #consultation, #order, #thanks {
