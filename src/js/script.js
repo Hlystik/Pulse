@@ -151,4 +151,28 @@ $(document).ready(function(){
             return false;
         });
     });
+
+    // Smooth scroll and pageup
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href*='#']").on("click", function(e){
+        const anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+    //Код петриченко
+  /*   $("a[href^='#']").click(function() {
+        const _href = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    }); */
 });
